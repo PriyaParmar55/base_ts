@@ -13,7 +13,6 @@ import {
 	DeletedAt,
 } from 'sequelize-typescript';
 import { Role } from './role.model';
-import { User } from './user.model'; // For createdBy/updatedBy relations if needed
 
 @Table({
 	tableName: 'user',

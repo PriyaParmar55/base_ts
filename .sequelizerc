@@ -1,19 +1,8 @@
-"use strict";
-require("babel-register");
-const path = require("path");
+const path = require('path');
 
 module.exports = {
-  config: path.resolve(
-    path.join(process.cwd(), "sequelize/config"),
-    "config.js"
-  ),
-  "seeders-path": path.resolve(
-    path.join(process.cwd(), "sequelize"),
-    "seeders"
-  ),
-  "migrations-path": path.resolve(
-    path.join(process.cwd(), "sequelize"),
-    "migrations"
-  ),
-  "models-path": path.resolve(path.join(process.cwd(), "src"), "models"),
+	config: path.resolve('sequelize/config/config.js'),
+	'migrations-path': path.resolve('sequelize/migrations'),
+	'models-path': path.resolve('src/models'),
+	'seeders-path': path.resolve('sequelize/seeders'),
 };
